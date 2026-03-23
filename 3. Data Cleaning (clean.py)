@@ -1,0 +1,11 @@
+import pandas as pd
+
+df = pd.read_csv('data/raw_data.csv')
+
+# Example cleaning
+df.dropna(inplace=True)
+df['Price'] = df['Price'].replace('[₹,]', '', regex=True).astype(float)
+
+df.to_csv('data/clean_data.csv', index=False)
+
+print("Data Cleaned Successfully!")
