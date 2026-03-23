@@ -1,0 +1,15 @@
+data-scraping-dashboard/
+│
+├── data/
+│   └── raw_data.csv
+│
+├── scripts/
+│   ├── scrape.py
+│   ├── clean.py
+│   └── visualize.py
+│
+├── dashboard/
+│   └── powerbi.pbix
+│
+├── requirements.txt
+└── README.md
