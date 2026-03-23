@@ -1,0 +1,24 @@
+import requests
+from bs4 import BeautifulSoup
+import pandas as pd
+
+url = "https://example.com"
+
+response = requests.get(url)
+soup = BeautifulSoup(response.text, 'html.parser')
+
+data = []
+
+for item in soup.find_all('div', class_='item'):
+    title = item.find('h2').text
+    price = item.find('span', class_='price').text
+
+    data.append({
+        'Title': title,
+        'Price': price
+    })
+
+df = pd.DataFrame(data)
+df.to_csv('data/raw_data.csv', index=False)
+
+print("Data Scraped Successfully!")
