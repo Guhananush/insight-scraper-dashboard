@@ -1,0 +1,13 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+
+df = pd.read_csv('data/clean_data.csv')
+
+plt.figure()
+df['Price'].plot(kind='hist')
+
+plt.title("Price Distribution")
+plt.xlabel("Price")
+plt.ylabel("Frequency")
+
+plt.show()
