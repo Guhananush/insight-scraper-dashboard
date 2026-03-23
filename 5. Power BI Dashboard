@@ -1,0 +1,12 @@
+Import clean_data.csv into Power BI
+Create:
+Bar charts
+Pie charts
+Filters (slicers)
+Save as: dashboard/powerbi.pbix
+
+6. requirements.txt
+requests
+beautifulsoup4
+pandas
+matplotlib
