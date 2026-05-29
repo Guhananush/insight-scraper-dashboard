@@ -5,6 +5,6 @@ Insight Scraper Dashboard is a data scraping and analytics platform that collect
 #### Features
 Automated web data scraping                 
 Data cleaning and transformation                     
-Interactive dashboard and visualizations
+Interactive dashboard and visualizations                          
 Real-time or scheduled data updates
 Insight generation and reporting
